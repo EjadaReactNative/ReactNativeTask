@@ -7,10 +7,7 @@ import { memo } from "react";
 const PostList = ({posts})=>{
 
     const renderItem = useCallback(({ item }) => (
-        /* <View>
-             <Text>{item.title}</Text>
-             <Button title="View" onPress={() => navigation.navigate('PostDetails', { post: item })} />
-         </View>*/
+    
          <PostCard itemData = {item} />
      ));
     const ExtractKey = (item) => item.id.toString()

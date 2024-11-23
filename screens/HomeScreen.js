@@ -26,23 +26,8 @@ const HomeScreen = ({ navigation }) => {
            });
     }, []);
 
-/*const renderItem = ({ item }) => (
-        /* <View>
-             <Text>{item.title}</Text>
-             <Button title="View" onPress={() => navigation.navigate('PostDetails', { post: item })} />
-         </View>*/
-      //   <PostCard itemData = {item} />
-    // );
 
     return (
-        /*(<View>
-            <FlatList
-                data={posts}
-                keyExtractor={(item) => item.id.toString()}
-                renderItem={renderItem}
-            />
-        </View>
-        */
        <>
         {isLoading ? (
             <LoadingOverlay />

@@ -10,7 +10,7 @@ const PostList = ({posts})=>{
     
          <PostCard itemData = {item} />
      ));
-    const ExtractKey = (item) => item.id.toString()
+    const ExtractKey = (item) => item.id
 
     return (
     <FlatList 
